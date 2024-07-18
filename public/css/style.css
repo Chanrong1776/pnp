@@ -58,8 +58,8 @@ ol {
 ul,
 ol {
   padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
+  -webkit-padding: 0;
+  -moz-padding: 0;
 }
 hr {
   height: 2px;
@@ -141,7 +141,7 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .section-title h2 {
   position: relative;
@@ -247,6 +247,7 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+  padding-top: 120px;
 }
 #features i.fa {
   font-size: 38px;
@@ -262,7 +263,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding: 120px 0;
 }
 #about h3 {
   font-size: 22px;
@@ -393,6 +394,7 @@ header .intro-text {
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -459,15 +461,15 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  padding: 100px 0 165px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 #contact .section-title p {
-  font-size: 16px;
+  font-size: 20px;
 }
 #contact h2 {
   color: #fff;
@@ -488,8 +490,9 @@ header .intro-text {
   color: #fff;
   margin-top: 80px;
   margin-bottom: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   font-weight: 400;
+  font-size: x-large;
 }
 #contact form {
   padding-top: 20px;
@@ -551,6 +554,9 @@ label {
 #contact .contact-item {
   margin: 20px 0;
 }
+#contact .contact-item p {
+  font-size: 19px;
+}
 #contact .contact-item span {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
@@ -604,3 +610,4 @@ label {
     margin: 50px 0;
   }
 }
+

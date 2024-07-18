@@ -1,6 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Header = (props) => {
+  const navigate = useNavigate();
+  const handleScrollToSection = (section) => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.querySelector(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 0);
+  };
+
   return (
     <header id="header">
       <div className="intro">
@@ -16,6 +28,7 @@ export const Header = (props) => {
                 <a
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
+                  onClick={(e) => { e.preventDefault(); handleScrollToSection("#features"); }}
                 >
                   Learn More
                 </a>{" "}
