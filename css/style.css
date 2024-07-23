@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -226,6 +226,7 @@ a:focus,
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 0 #6e6b6b, -1px 1px 0 #6e6b6b, 1px -1px 0 #6e6b6b, -1px -1px 0 #6e6b6b;
 }
 .intro h1 span {
   font-weight: 800;
@@ -238,8 +239,10 @@ a:focus,
   line-height: 30px;
   margin: 0 auto;
   margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
-.intro p span{
+.intro p span {
   margin-left: 20px;
 }
 header .intro-text {
