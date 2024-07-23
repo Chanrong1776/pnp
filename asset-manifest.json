@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pnp/static/css/main.a0327324.css",
-    "main.js": "/pnp/static/js/main.5063e8fd.js",
+    "main.js": "/pnp/static/js/main.d1ba648c.js",
     "static/media/SigmaIcon.png": "/pnp/static/media/SigmaIcon.16dae34924708139591f.png",
     "index.html": "/pnp/index.html",
     "main.a0327324.css.map": "/pnp/static/css/main.a0327324.css.map",
-    "main.5063e8fd.js.map": "/pnp/static/js/main.5063e8fd.js.map"
+    "main.d1ba648c.js.map": "/pnp/static/js/main.d1ba648c.js.map"
   },
   "entrypoints": [
     "static/css/main.a0327324.css",
-    "static/js/main.5063e8fd.js"
+    "static/js/main.d1ba648c.js"
   ]
 }
