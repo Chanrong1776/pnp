@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/chaitest.github.io/static/css/main.a0327324.css",
+    "main.js": "/chaitest.github.io/static/js/main.9d638732.js",
+    "static/media/SigmaIcon.png": "/chaitest.github.io/static/media/SigmaIcon.16dae34924708139591f.png",
+    "index.html": "/chaitest.github.io/index.html",
+    "main.a0327324.css.map": "/chaitest.github.io/static/css/main.a0327324.css.map",
+    "main.9d638732.js.map": "/chaitest.github.io/static/js/main.9d638732.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0327324.css",
+    "static/js/main.9d638732.js"
+  ]
+}
