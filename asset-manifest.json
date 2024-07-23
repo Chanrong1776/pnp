@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/chaitest.github.io/static/css/main.a0327324.css",
-    "main.js": "/chaitest.github.io/static/js/main.2be34d9b.js",
-    "static/media/SigmaIcon.png": "/chaitest.github.io/static/media/SigmaIcon.16dae34924708139591f.png",
-    "index.html": "/chaitest.github.io/index.html",
-    "main.a0327324.css.map": "/chaitest.github.io/static/css/main.a0327324.css.map",
-    "main.2be34d9b.js.map": "/chaitest.github.io/static/js/main.2be34d9b.js.map"
+    "main.css": "/pnp/static/css/main.a0327324.css",
+    "main.js": "/pnp/static/js/main.ce131484.js",
+    "static/media/SigmaIcon.png": "/pnp/static/media/SigmaIcon.16dae34924708139591f.png",
+    "index.html": "/pnp/index.html",
+    "main.a0327324.css.map": "/pnp/static/css/main.a0327324.css.map",
+    "main.ce131484.js.map": "/pnp/static/js/main.ce131484.js.map"
   },
   "entrypoints": [
     "static/css/main.a0327324.css",
-    "static/js/main.2be34d9b.js"
+    "static/js/main.ce131484.js"
   ]
 }
