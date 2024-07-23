@@ -636,6 +636,13 @@ label {
   color: #608dfd;
   background: #fff;
 }
+
+.swal2-confirm {
+  background-color: #608dfd;
+  border: none;
+  color: white;
+}
+
 /* Footer Section*/
 #footer {
   background: #f6f6f6;
