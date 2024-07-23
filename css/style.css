@@ -510,13 +510,19 @@ header .intro-text {
 #contact {
   padding: 100px 0 165px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  /* color: rgba(255, 255, 255, 0.75); */
 }
 #contact .section-title {
   margin-bottom: 20px;
 }
 #contact .section-title p {
   font-size: 20px;
+}
+#contact p{
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact span{
+  font-size: 19px;
 }
 #contact h2 {
   color: #fff;
