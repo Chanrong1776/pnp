@@ -393,8 +393,9 @@ header .intro-text {
 }
 
 .gallery-big-image {
-  flex: 2;
+  flex: 2.5;
   margin-right: 10px;
+  margin-left: 70px;
 }
 
 .gallery-big-image img {
