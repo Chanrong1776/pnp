@@ -386,24 +386,17 @@ header .intro-text {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 10px; /* Add space between the images */
-}
-
-.gallery-big-image,
-.gallery-small-images {
-  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
 .gallery-big-image {
   flex: 2.5;
   margin-right: 10px;
+  margin-left: 70px;
 }
 
 .gallery-big-image img {
   width: 100%;
   height: auto;
-  border: 1px solid #ddd; /* Optional: Add a border to visually separate the images */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual depth */
 }
 
 .gallery-small-images {
@@ -417,42 +410,6 @@ header .intro-text {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  border: 1px solid #ddd; /* Optional: Add a border to visually separate the images */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual depth */
-}
-
-.gallery-small-images img:last-child {
-  margin-bottom: 0;
-}
-
-#portfolio {
-  padding: 100px 0;
-}
-
-#portfolio .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .gallery-row {
-    flex-direction: column; /* Stack images vertically on small screens */
-  }
-
-  .gallery-big-image {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  .gallery-small-images {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .gallery-small-images img {
-    margin-bottom: 0;
-  }
 }
 
 .gallery-small-images img:last-child {
