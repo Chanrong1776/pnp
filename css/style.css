@@ -424,6 +424,11 @@ header .intro-text {
   padding: 100px 0;
 }
 
+#portfolio .row{
+  margin-right: -45px;
+  margin-left: -20px;
+}
+
 .red-screen {
   background-color: red;
   height: 100vh;
