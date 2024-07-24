@@ -401,9 +401,20 @@ header .intro-text {
 }
 
 .gallery-big-image {
+  position: relative;
   flex: 2.5;
   margin-right: 10px;
   margin-left: 70px;
+}
+.gallery-big-image .hover-bg {
+  position: relative; /* Ensures the title is positioned relative to this container */
+}
+.gallery-big-image .hover-text {
+  position: absolute; /* Allows for precise positioning */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the element's own size */
+  text-align: center; /* Centers text within the hover-text container */
 }
 
 .gallery-big-image img {
@@ -416,6 +427,14 @@ header .intro-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.gallery-small-images .hover-bg .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .gallery-small-images img {
