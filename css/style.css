@@ -398,9 +398,6 @@ header .intro-text {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  max-width: 1200px; /* Limit the maximum width */
-  margin: 0 auto; /* Center the row */
-  padding: 0 15px; /* Add padding for small screen margins */
 }
 
 .gallery-big-image {
@@ -433,12 +430,11 @@ header .intro-text {
 
 #portfolio {
   padding: 100px 0;
-  max-width: 1200px; /* Limit the maximum width */
-  margin: 0 auto; /* Center the portfolio section */
 }
 
-#portfolio .row {
-  margin: 0 -10px; /* Remove unwanted negative margins */
+#portfolio .row{
+  margin-right: -10px;
+  margin-left: -20px;
 }
 
 .red-screen {
@@ -453,13 +449,11 @@ header .intro-text {
   margin: 5px 45px 0 -35px;
   padding: 0;
 }
-
 .portfolio-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
 }
-
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
@@ -476,7 +470,6 @@ header .intro-text {
   opacity: 0;
   transition: all 0.5s;
 }
-
 .hover-bg .hover-text > h4 {
   opacity: 0;
   color: #fff;
@@ -487,15 +480,14 @@ header .intro-text {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-}
 
+}
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
@@ -531,6 +523,7 @@ header .intro-text {
   z-index: 1000; /* Ensure it's above other content */
 }
 
+
 .popup-image {
   max-width: 90%;
   max-height: 75vh; 
@@ -559,7 +552,6 @@ header .intro-text {
     margin-top: 5px; 
   }
 }
-
 
 /* Testimonials Section */
 #testimonials {
