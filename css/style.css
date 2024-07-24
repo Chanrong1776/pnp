@@ -450,8 +450,8 @@ header .intro-text {
   padding: 0;
 }
 .portfolio-item .hover-bg {
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden;
+  position: relative; */
   margin: 0;
 }
 .hover-bg .hover-text {
