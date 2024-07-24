@@ -227,7 +227,8 @@ a:focus,
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 0 #6e6b6b, -1px 1px 0 #6e6b6b, 1px -1px 0 #6e6b6b, -1px -1px 0 #6e6b6b;
+  text-shadow: 1px 1px 0 #6e6b6b, -1px 1px 0 #6e6b6b, 1px -1px 0 #6e6b6b,
+    -1px -1px 0 #6e6b6b;
 }
 
 .intro h1 span {
@@ -243,7 +244,8 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 20px;
   font-weight: bold;
-  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }
 
 .intro p span {
@@ -252,13 +254,13 @@ a:focus,
 
 @media (max-width: 768px) {
   .intro p {
-    display: block; 
+    display: block;
   }
 
   .intro p span {
     display: block;
-    margin-left: 0; 
-    margin-top: 5px; 
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
 
@@ -282,7 +284,6 @@ header .intro-text {
     padding-bottom: 100px;
   }
 }
-
 
 /* Features Section */
 #features {
@@ -401,20 +402,10 @@ header .intro-text {
 }
 
 .gallery-big-image {
-  position: relative;
   flex: 2.5;
   margin-right: 10px;
   margin-left: 70px;
-}
-.gallery-big-image .hover-bg {
-  position: relative; /* Ensures the title is positioned relative to this container */
-}
-.gallery-big-image .hover-text {
-  position: absolute; /* Allows for precise positioning */
-  top: 50%; /* Centers vertically */
-  left: 50%; /* Centers horizontally */
-  transform: translate(-50%, -50%); /* Adjusts for the element's own size */
-  text-align: center; /* Centers text within the hover-text container */
+  position: relative;
 }
 
 .gallery-big-image img {
@@ -427,14 +418,6 @@ header .intro-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.gallery-small-images .hover-bg .hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .gallery-small-images img {
@@ -451,7 +434,7 @@ header .intro-text {
   padding: 100px 0;
 }
 
-#portfolio .row{
+#portfolio .row {
   margin-right: -10px;
   margin-left: -20px;
 }
@@ -473,6 +456,24 @@ header .intro-text {
   position: relative;
   margin: 0;
 }
+
+.hover-bg {
+  position: relative; /* Allows absolute positioning of children */
+  display: inline-block; /* Ensures proper sizing for absolute positioning */
+}
+
+.hover-text {
+  position: absolute; /* Allows for precise positioning */
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts for the element's own size */
+  text-align: center; /* Centers text within the hover-text container */
+  color: #fff; /* Text color */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+  padding: 10px; /* Padding around text */
+  box-sizing: border-box; /* Ensures padding is included in the total width/height */
+}
+
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
@@ -505,7 +506,6 @@ header .intro-text {
   backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-
 }
 .hover-bg:hover .hover-text {
   opacity: 1;
@@ -530,7 +530,7 @@ header .intro-text {
 
 .popup-overlay {
   position: fixed;
-  top: 60px; 
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -542,33 +542,32 @@ header .intro-text {
   z-index: 1000; /* Ensure it's above other content */
 }
 
-
 .popup-image {
   max-width: 90%;
-  max-height: 75vh; 
+  max-height: 75vh;
   cursor: auto;
-  border: 5px solid #fff; 
+  border: 5px solid #fff;
 }
 
 @media (max-width: 768px) {
   .popup-image {
-    max-height: calc(90vh - 60px); 
+    max-height: calc(90vh - 60px);
   }
 }
 
 .popup-overlay {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .intro p {
-    display: block; 
+    display: block;
   }
 
   .intro p span {
     display: block;
-    margin-left: 0; 
-    margin-top: 5px; 
+    margin-left: 0;
+    margin-top: 5px;
   }
 }
 
@@ -642,10 +641,10 @@ header .intro-text {
 #contact .section-title p {
   font-size: 20px;
 }
-#contact p{
+#contact p {
   color: rgba(255, 255, 255, 0.75);
 }
-#contact span{
+#contact span {
   font-size: 19px;
 }
 #contact h2 {
@@ -767,7 +766,7 @@ label {
 }
 
 .swal2-confirm {
-  background-color: #608dfd; 
+  background-color: #608dfd;
   border: none;
   color: white;
 }
