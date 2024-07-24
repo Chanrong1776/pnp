@@ -450,6 +450,8 @@ header .intro-text {
 .portfolio-item {
   margin: 5px 45px 0 -35px;
   padding: 0;
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
@@ -463,15 +465,20 @@ header .intro-text {
 }
 
 .hover-text {
-  position: absolute; /* Allows for precise positioning */
-  top: 50%; /* Centers vertically */
-  left: 50%; /* Centers horizontally */
-  transform: translate(-50%, -50%); /* Adjusts for the element's own size */
-  text-align: center; /* Centers text within the hover-text container */
-  color: #fff; /* Text color */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-  padding: 10px; /* Padding around text */
-  box-sizing: border-box; /* Ensures padding is included in the total width/height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6); /* Dark background for better readability */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .hover-bg .hover-text {
@@ -517,6 +524,11 @@ header .intro-text {
 
 .gallery-small-images .hover-bg .hover-text > h4 {
   font-size: 20px;
+}
+
+img.img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
