@@ -502,7 +502,7 @@ header .intro-text {
 /* Image styles */
 .popup-image {
   max-width: 90%;
-  max-height: calc(100vh - 60px); /* Adjust height to fit within viewport minus navbar height */
+  max-height: 75vh; /* Adjust height to fit within viewport minus navbar height */
   cursor: auto;
   border: 5px solid #fff; /* Optional: Add border for better visibility */
 }
@@ -511,13 +511,6 @@ header .intro-text {
 @media (max-width: 768px) {
   .popup-image {
     max-height: calc(90vh - 60px); /* Further restrict height on smaller screens */
-  }
-}
-
-/* Optional: Adjust padding or margins for mobile viewports */
-@media (max-width: 768px) {
-  .popup-image {
-    max-height: 70vh; /* Further restrict height on smaller screens */
   }
 }
 
