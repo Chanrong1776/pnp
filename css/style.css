@@ -492,16 +492,23 @@ header .intro-text {
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end; /* Align items to the bottom */
   cursor: pointer;
   z-index: 1000; /* Ensure it's above other content */
 }
 
+/* Image styles */
 .popup-image {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80vh; /* Limit height to 80% of viewport height */
+  margin-bottom: 20px; /* Add some margin from the bottom */
   cursor: auto;
-  margin-top: 30px;
+  border: 5px solid #fff; /* Optional: Add border for better visibility */
+}
+
+/* Optional: Add a bit of margin on the bottom for space */
+.popup-overlay {
+  padding-bottom: 20px; /* Adjust as needed */
 }
 
 
