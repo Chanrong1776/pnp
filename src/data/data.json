@@ -1,37 +1,24 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "SIGMA E"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+    "paragraph": "เราคือ บริษัทที่แตกแขนงมาจากห้างหุ้นส่วนจำกัด พีแอนด์พี เจเนเรชั่น เน็คเวิร์ค ให้บริการในเรื่องการจัดหาซื้อขายอุปกรณ์และติดตั้งอุปกรณ์ใช้ในระบบคอมพิวเตอร์เน็ตเวิร์ค ระบบป้องกัน และรักษาความปลอดภัย ควบคุมสั่งการระบบไฟฟ้า และสื่อสารทั้งแบบไร้สายและบนสาย ทั้งภายในและภายนอกอาคารทุกชนิด งานบริหารจัดการโครงการต่างๆ พร้อมทั้งมีการให้บริการดูแลบำรุงรักษาอุปกรณ์เครื่องมือ รวมถึงการวิเคราะห์แก้ไขปัญหาและซ่อมบำรุงให้คืนสภาพปกติ ในด้านวิศวกรรมกับหน่วยงานต่างๆ อย่างมีประสิทธิภาพโดยผู้เชี่ยวชาญงานเฉพาะด้านในแต่ละด้านสาขา"
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
+      "title": "งานรับเหมาออกแบบและติดตั้งระบบ",
+      "largeImage": "img/portfolio/01-small.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
+      "title": "งานปรับปรุงโครงข่ายสาธารณะ",
+      "largeImage": "img/portfolio/02-small.jpg",
       "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
+      "title": "งานออกแบบระบบไฟฟ้า",
+      "largeImage": "img/portfolio/03-small.jpg",
       "smallImage": "img/portfolio/03-small.jpg"
     },
     {
@@ -67,34 +54,34 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cogs",
+      "name": "งานรับเหมา",
+      "text": "งานรับเหมาออกแบบและติดตั้งระบบความปลอดภัย รวมไปถึงการจัดการบริหารทรัพยากรบุคลากร ให้กับโรงงานอุตสาหกรรม และอาคารที่พักอาศัย"
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-edit",
+      "name": "งานออกแบบ",
+      "text": "งานออกแบบระบบสาธารณูปโภคและสิ่งจำเป็นสำหรับการใช้งานภายในอาคาร"
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-shopping-cart",
+      "name": "งานจัดหาซื้อขายและติดต้ัง",
+      "text": "งานจัดหาซื้อขายและติดตั้งระบบคอมพิวเตอร์ รวมไปถึงอุปกรณ์ประกอบการใช้งานทั้งหมดที่เกี่ยวข้อง งานติดตั้งปรับปรุงระบบโครงข่ายสาธารณะ ( network ) และบำรุงซ่อมแซมรักษา"
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-users",
+      "name": "งานที่ปรึกษา",
+      "text": "งานรับเป็นที่ปรึกษาและให้ออกแบบการจัดการกับระบบการบริหารจัดการหน่วยงานต่างๆด้วยโปรแกรมสำเร็จรูป"
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-server",
+      "name": "งานออกแบบระบบไฟฟ้า",
+      "text": "งานออกแบบระบบไฟฟ้า และควบคุมระบบมอเตอร์ MDB MCC และระบบ SCADA สำหรับงานควบคุมสั่งการและติดตามผลอย่างต่อเนื่อง"
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-bolt",
+      "name": "งานติดตั้งระบบไฟฟ้าแรงสูง",
+      "text": "ควบคุมและดำเนินการการติดตั้งระบบไฟฟ้าแรงสูงและระบบสายนำสัญญาณต่างๆ"
     }
   ],
   "Testimonials": [

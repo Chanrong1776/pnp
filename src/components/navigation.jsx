@@ -7,12 +7,24 @@ export const Navigation = () => {
 
   const handleScrollToSection = (section) => {
     navigate("/");
+
     setTimeout(() => {
       const element = document.querySelector(section);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    }, 0);
+    }, 100);
+
+    // Collapse the navbar after a selection is made
+    const navbarToggle = document.querySelector(".navbar-toggle");
+    if (navbarToggle && navbarToggle.getAttribute("aria-expanded") === "true") {
+      navbarToggle.click();
+    }
+  };
+
+  const handleNavLinkClick = (e, section) => {
+    e.preventDefault();
+    handleScrollToSection(section);
   };
 
   return (
@@ -24,65 +36,72 @@ export const Navigation = () => {
             className="navbar-toggle collapsed"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
           >
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a 
-            href="#page-top" 
-            className="navbar-brand page-scroll d-flex align-items-center" 
-            onClick={(e) => { e.preventDefault(); handleScrollToSection("#page-top"); }}
-            style={{ display: 'flex', alignItems: 'center' }} // Add this line
+          <a
+            href="#page-top"
+            className="navbar-brand page-scroll d-flex align-items-center"
+            onClick={(e) => handleNavLinkClick(e, "#page-top")}
+            style={{ display: "flex", alignItems: "center" }}
           >
-            <img src={SigmaIcon} alt="Sigma Logo" style={{ height: '50px', marginRight: '10px' }} />
+            <img
+              src={SigmaIcon}
+              alt="Sigma Logo"
+              style={{ height: "50px", marginRight: "10px" }}
+            />
             Sigma E CO.,LTD
           </a>
         </div>
 
-        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+        >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a 
-                href="#features" 
-                onClick={(e) => { e.preventDefault(); handleScrollToSection("#features"); }} 
-                className="page-scroll"
-              >
-                Solutions
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#about" 
-                onClick={(e) => { e.preventDefault(); handleScrollToSection("#about"); }} 
+              <a
+                href="#about"
+                onClick={(e) => handleNavLinkClick(e, "#about")}
                 className="page-scroll"
               >
                 About
               </a>
             </li>
             <li>
-              <a 
-                href="#services" 
-                onClick={(e) => { e.preventDefault(); handleScrollToSection("#services"); }} 
+              <a
+                href="#services"
+                onClick={(e) => handleNavLinkClick(e, "#services")}
                 className="page-scroll"
               >
                 Services
               </a>
             </li>
             <li>
-              <a 
-                href="#portfolio" 
-                onClick={(e) => { e.preventDefault(); handleScrollToSection("#portfolio"); }} 
+              <a
+                href="#portfolio"
+                onClick={(e) => handleNavLinkClick(e, "#portfolio")}
                 className="page-scroll"
               >
                 Projects
               </a>
             </li>
             <li>
-              <a 
-                href="/contact" 
+              <a
+                href="#/contact"
                 className="page-scroll"
+                onClick={(e) => {
+                  navigate("/contact");
+                  // Collapse the navbar after a selection is made
+                  const navbarToggle = document.querySelector(".navbar-toggle");
+                  if (navbarToggle && navbarToggle.getAttribute("aria-expanded") === "true") {
+                    navbarToggle.click();
+                  }
+                }}
               >
                 Contact
               </a>

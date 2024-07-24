@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import Swal from "sweetalert2";
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -14,6 +16,11 @@ export const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e) => {
@@ -23,21 +30,46 @@ export const Contact = (props) => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_lh3t2zy",
+        "template_jxfyeqp",
         e.target,
-        "YOUR_PUBLIC_KEY"
+        "5ipRsI19stk5B1D51"
       )
       .then(
         (result) => {
-          console.log(result.text);
-          clearState();
+          Swal.fire({
+            icon: "success",
+            title: "ส่งข้อความสำเร็จ",
+            text: "เราจะติดต่อกลับไปภายในระยะเวลาทำการของบริษัท",
+            timer: 1500,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            customClass: {
+              confirmButton: "swal2-confirm",
+            },
+          }).then(() => {
+            clearState();
+          });
         },
         (error) => {
+          Swal.fire({
+            icon: "error",
+            title: "ส่งข้อความล้มเหลว",
+            text: "เกิดข้อผิดพลาดในการส่งข้อความ กรุณาลองใหม่อีกครั้ง",
+            timer: 1500,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            customClass: {
+              confirmButton: "swal2-confirm",
+            },
+          }).then(() => {
+            clearState();
+          });
           console.log(error.text);
         }
       );
   };
+
   return (
     <div>
       <div id="contact">
@@ -63,6 +95,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="ชื่อ"
                         required
+                        value={name}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -77,6 +110,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Email"
                         required
+                        value={email}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -91,6 +125,7 @@ export const Contact = (props) => {
                     rows="4"
                     placeholder="ข้อความ"
                     required
+                    value={message}
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
@@ -115,12 +150,12 @@ export const Contact = (props) => {
             <div className="contact-item">
               <span>
                 <i className="fa fa-phone"></i> โทรศัพท์
+                {props.data
+                  ? props.data.phone.map((number, index) => (
+                      <p key={index}>{number}</p>
+                    ))
+                  : "loading"}
               </span>
-              {props.data
-                ? props.data.phone.map((number, index) => (
-                    <p key={index}>{number}</p>
-                  ))
-                : "loading"}
             </div>
             <div className="contact-item">
               <p>
