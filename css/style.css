@@ -227,8 +227,7 @@ a:focus,
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 0 #6e6b6b, -1px 1px 0 #6e6b6b, 1px -1px 0 #6e6b6b,
-    -1px -1px 0 #6e6b6b;
+  text-shadow: 1px 1px 0 #6e6b6b, -1px 1px 0 #6e6b6b, 1px -1px 0 #6e6b6b, -1px -1px 0 #6e6b6b;
 }
 
 .intro h1 span {
@@ -244,8 +243,7 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 20px;
   font-weight: bold;
-  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
 .intro p span {
@@ -254,13 +252,13 @@ a:focus,
 
 @media (max-width: 768px) {
   .intro p {
-    display: block;
+    display: block; 
   }
 
   .intro p span {
     display: block;
-    margin-left: 0;
-    margin-top: 5px;
+    margin-left: 0; 
+    margin-top: 5px; 
   }
 }
 
@@ -284,6 +282,7 @@ header .intro-text {
     padding-bottom: 100px;
   }
 }
+
 
 /* Features Section */
 #features {
@@ -405,7 +404,6 @@ header .intro-text {
   flex: 2.5;
   margin-right: 10px;
   margin-left: 70px;
-  position: relative;
 }
 
 .gallery-big-image img {
@@ -434,7 +432,7 @@ header .intro-text {
   padding: 100px 0;
 }
 
-#portfolio .row {
+#portfolio .row{
   margin-right: -10px;
   margin-left: -20px;
 }
@@ -450,37 +448,12 @@ header .intro-text {
 .portfolio-item {
   margin: 5px 45px 0 -35px;
   padding: 0;
-  position: relative;
-  overflow: hidden;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
 }
-
-.hover-bg {
-  position: relative; /* Allows absolute positioning of children */
-  display: inline-block; /* Ensures proper sizing for absolute positioning */
-}
-
-.hover-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6); /* Dark background for better readability */
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
 .hover-bg .hover-text {
   position: absolute;
   text-align: center;
@@ -513,6 +486,7 @@ header .intro-text {
   backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
+
 }
 .hover-bg:hover .hover-text {
   opacity: 1;
@@ -526,11 +500,6 @@ header .intro-text {
   font-size: 20px;
 }
 
-img.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 @media (max-width: 768px) {
   .gallery-big-image .hover-bg .hover-text > h4 {
     font-size: 12px;
@@ -542,7 +511,7 @@ img.img-responsive {
 
 .popup-overlay {
   position: fixed;
-  top: 60px;
+  top: 60px; 
   left: 0;
   right: 0;
   bottom: 0;
@@ -554,32 +523,33 @@ img.img-responsive {
   z-index: 1000; /* Ensure it's above other content */
 }
 
+
 .popup-image {
   max-width: 90%;
-  max-height: 75vh;
+  max-height: 75vh; 
   cursor: auto;
-  border: 5px solid #fff;
+  border: 5px solid #fff; 
 }
 
 @media (max-width: 768px) {
   .popup-image {
-    max-height: calc(90vh - 60px);
+    max-height: calc(90vh - 60px); 
   }
 }
 
 .popup-overlay {
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
 }
 
 @media (max-width: 768px) {
   .intro p {
-    display: block;
+    display: block; 
   }
 
   .intro p span {
     display: block;
-    margin-left: 0;
-    margin-top: 5px;
+    margin-left: 0; 
+    margin-top: 5px; 
   }
 }
 
@@ -653,10 +623,10 @@ img.img-responsive {
 #contact .section-title p {
   font-size: 20px;
 }
-#contact p {
+#contact p{
   color: rgba(255, 255, 255, 0.75);
 }
-#contact span {
+#contact span{
   font-size: 19px;
 }
 #contact h2 {
@@ -778,7 +748,7 @@ label {
 }
 
 .swal2-confirm {
-  background-color: #608dfd;
+  background-color: #608dfd; 
   border: none;
   color: white;
 }
