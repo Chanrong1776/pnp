@@ -497,7 +497,7 @@ header .intro-text {
 }
 
 .gallery-small-images .hover-bg .hover-text > h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -505,8 +505,9 @@ header .intro-text {
     font-size: 12px;
   }
   .gallery-small-images .hover-bg .hover-text > h4 {
-    font-size: 6px;
+    font-size: 10px;
   }
+
 }
 
 .popup-overlay {
