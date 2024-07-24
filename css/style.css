@@ -479,18 +479,13 @@ header .intro-text {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
-/* Add these styles to your CSS file */
 
-/* Add these styles to your CSS file */
-
-/* Overlay styles */
-/* Overlay styles */
 .popup-overlay {
   position: fixed;
-  top: 60px; /* Adjust this value based on your navbar height */
+  top: 60px; 
   left: 0;
   right: 0;
-  bottom: 0; /* Ensure it extends to the bottom of the viewport */
+  bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
@@ -499,24 +494,22 @@ header .intro-text {
   z-index: 1000; /* Ensure it's above other content */
 }
 
-/* Image styles */
+
 .popup-image {
   max-width: 90%;
-  max-height: 75vh; /* Adjust height to fit within viewport minus navbar height */
+  max-height: 75vh; 
   cursor: auto;
-  border: 5px solid #fff; /* Optional: Add border for better visibility */
+  border: 5px solid #fff; 
 }
 
-/* Optional: Adjust padding or margins for mobile viewports */
 @media (max-width: 768px) {
   .popup-image {
-    max-height: calc(90vh - 60px); /* Further restrict height on smaller screens */
+    max-height: calc(90vh - 60px); 
   }
 }
 
-/* Optional: Add a bit of margin on the bottom for space */
 .popup-overlay {
-  padding-bottom: 20px; /* Adjust as needed */
+  padding-bottom: 20px; 
 }
 
 
