@@ -476,7 +476,6 @@ header .intro-text {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   transition: all 0.3s;
-  font-size: 18px;
   letter-spacing: 1px;
   font-weight: 500;
   text-transform: uppercase;
@@ -487,19 +486,28 @@ header .intro-text {
   backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
+
 }
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
 
+.gallery-big-image .hover-bg .hover-text > h4 {
+  font-size: 30px;
+}
+
+.gallery-small-image .hover-bg .hover-text > h4 {
+  font-size: 22px;
+}
+
 @media (max-width: 768px) {
-  .hover-bg .hover-text > h4 {
+  .gallery-big-image .hover-bg .hover-text > h4 {
     font-size: 12px;
   }
-
-  .hover-bg:hover .hover-text > h4 {
+  .gallery-small-image .hover-bg .hover-text > h4 {
     font-size: 10px;
   }
+
 }
 
 .popup-overlay {
