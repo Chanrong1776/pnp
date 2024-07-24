@@ -484,12 +484,13 @@ header .intro-text {
 /* Add these styles to your CSS file */
 
 /* Overlay styles */
+/* Overlay styles */
 .popup-overlay {
   position: fixed;
-  top: 60px; /* Adjust based on your navigation bar height */
+  top: 60px; /* Adjust this value based on your navbar height */
   left: 0;
-  width: 100%;
-  height: calc(100% - 60px); /* Full height minus navigation bar height */
+  right: 0;
+  bottom: 0; /* Ensure it extends to the bottom of the viewport */
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
@@ -501,9 +502,16 @@ header .intro-text {
 /* Image styles */
 .popup-image {
   max-width: 90%;
-  max-height: 90vh; /* Limit height to 90% of viewport height */
+  max-height: calc(100vh - 60px); /* Adjust height to fit within viewport minus navbar height */
   cursor: auto;
   border: 5px solid #fff; /* Optional: Add border for better visibility */
+}
+
+/* Optional: Adjust padding or margins for mobile viewports */
+@media (max-width: 768px) {
+  .popup-image {
+    max-height: calc(90vh - 60px); /* Further restrict height on smaller screens */
+  }
 }
 
 /* Optional: Adjust padding or margins for mobile viewports */
