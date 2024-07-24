@@ -512,6 +512,26 @@ header .intro-text {
   padding-bottom: 20px; 
 }
 
+.gallery-big-image .hover-text h4,
+.gallery-small-images .hover-text h4 {
+  font-size: 18px; /* Default size for larger screens */
+  /* Other styling if needed */
+}
+
+/* Smaller font size for large images on smaller screens */
+@media (max-width: 768px) {
+  .gallery-big-image .hover-text h4 {
+    font-size: 14px; /* Smaller size for larger screens */
+  }
+}
+
+/* Smaller font size for small images on smaller screens */
+@media (max-width: 768px) {
+  .gallery-small-images .hover-text h4 {
+    font-size: 12px; /* Even smaller size for small images */
+  }
+}
+
 
 /* Testimonials Section */
 #testimonials {
