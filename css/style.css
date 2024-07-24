@@ -481,6 +481,8 @@ header .intro-text {
 }
 /* Add these styles to your CSS file */
 
+/* Add these styles to your CSS file */
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -500,6 +502,7 @@ header .intro-text {
   max-height: 90%;
   cursor: auto;
 }
+
 
 /* Testimonials Section */
 #testimonials {
