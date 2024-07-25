@@ -541,7 +541,7 @@ header .intro-text {
   max-width: 90%;
   max-height: 75vh; 
   cursor: auto;
-  border: 5px solid #fff; 
+  border: 5px solid #ffffff; 
 }
 
 @media (max-width: 768px) {
