@@ -1,3 +1,4 @@
+// ./components/gallery.js
 import React, { useState } from "react";
 import { Image } from "./image";
 
@@ -13,11 +14,10 @@ export const Gallery = (props) => {
     setPopupImage(null);
   };
 
+  
+
   return (
-    <div
-      id="portfolio"
-      className={`text-center ${!hasImages ? "red-screen" : ""}`}
-    >
+    <div id="portfolio" className={`text-center ${!hasImages ? "red-screen" : ""}`}>
       <div className="container">
         <div className="section-title">
           <h2>ตัวอย่างผลงาน</h2>
@@ -55,6 +55,8 @@ export const Gallery = (props) => {
           </div>
         </div>
       </div>
+
+      {/* Popup for large image */}
       {popupImage && (
         <div className="popup-overlay" onClick={closePopup}>
           <img src={popupImage} alt="Large view" className="popup-image" />

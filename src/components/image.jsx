@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const Image = ({ title, largeImage, smallImage, onClick }) => {
@@ -5,13 +6,13 @@ export const Image = ({ title, largeImage, smallImage, onClick }) => {
     <div
       className="portfolio-item"
       onClick={onClick}
-      style={{ cursor: "pointer" }}
+      style={{ cursor: 'pointer' }}
     >
       <div className="hover-bg">
         <div className="hover-text">
           <h4>{title}</h4>
         </div>
-        <img src={smallImage} className="img-responsive" alt={title} /> 
+        <img src={smallImage} className="img-responsive" alt={title} />
       </div>
     </div>
   );
